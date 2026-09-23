@@ -17,7 +17,7 @@
     body {
         background-color: var(--color-background);
         color: var(--color-foreground);
-        font-family: var(--font-lato);
+        font-family: var(--font-montserrat);
     }
 
      .container {
@@ -73,8 +73,15 @@
     @apply flex items-center;
 }
 
-@utility nav-link {
-    @apply  font-montserrat  font-bold text-sm uppercase hover:text-primary transition-all duration-75 px-1;
+@utility nav_link {
+    @apply font-bold text-sm uppercase hover:text-primary transition-all duration-75 px-1;
+}
+@utility line{
+   @apply w-28 h-1 rounded-full
+}
+
+@utility protfolio_img{
+   @apply  max-w-100  md:max-w-full h-auto rounded-lg
 }
 
 html {
