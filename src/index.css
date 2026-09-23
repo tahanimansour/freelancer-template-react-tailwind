@@ -84,6 +84,14 @@
    @apply  max-w-100  md:max-w-full h-auto rounded-lg
 }
 
+@utility contact_input{
+    @apply w-full border-0 border-b border-gray-300
+}
+
+@utility input_lable{
+    @apply block py-4 md:py-6 text-xl md:text-2xl text-muted
+}
+
 html {
     scroll-behavior: smooth;
 }
