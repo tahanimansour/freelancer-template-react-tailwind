@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --color-background: #ffffff;
+    --color-primary: #1abc9c;
+    --color-secondary: #2c3e50;
+    --color-foreground: #212529;
+    --color-muted: #6c757d;
+
+    --font-lato: "Lato", Arial, sans-serif;
+    --font-montserrat: "Montserrat", Arial, sans-serif;
+
+}
+
+@layer base {
+    body {
+        background-color: var(--color-background);
+        color: var(--color-foreground);
+        font-family: var(--font-lato);
+    }
+
+     .container {
+        @apply mx-auto;
+        @apply px-[0.75rem];
+        @apply md:px-0;
+    }
+
+    a,
+    button {
+        @apply cursor-pointer;
+    }
+
+    h1 {
+        font-size: 3.625rem;
+        line-height: 5rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+
+    h6 {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+
+@utility row {
+    @apply flex items-center;
+}
+
+@utility nav-link {
+    @apply  font-montserrat  font-bold text-sm uppercase hover:text-primary transition-all duration-75 px-1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
