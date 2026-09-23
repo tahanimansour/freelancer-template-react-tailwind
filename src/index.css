@@ -91,6 +91,9 @@
 @utility input_lable{
     @apply block py-4 md:py-6 text-xl md:text-2xl text-muted
 }
+@utility footer_icons{
+          @apply inline-flex w-13 h-13 text-xl justify-center items-center rounded-full border-2 border-white
+}
 
 html {
     scroll-behavior: smooth;
